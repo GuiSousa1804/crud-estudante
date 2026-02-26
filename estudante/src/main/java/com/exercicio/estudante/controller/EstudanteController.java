@@ -30,7 +30,7 @@ public class EstudanteController {
         estudanteService.deletarEstudante(id);
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     public void buscarPorId(@PathVariable Long id) {
         estudanteService.buscarPorId(id);
     }
