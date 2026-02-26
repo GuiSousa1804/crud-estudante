@@ -30,4 +30,9 @@ public class EstudanteController {
         estudanteService.deletarEstudante(id);
     }
 
+    @GetMapping
+    public void buscarPorId(@PathVariable Long id) {
+        estudanteService.buscarPorId(id);
+    }
+
 }
