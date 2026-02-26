@@ -13,11 +13,8 @@ public class EstudanteModel {
     private String email;
     private int idade;
 
-    public EstudanteModel(Long id, String nome, String email, int idade) {
-        this.id = id;
-        this.nome = nome;
-        this.email = email;
-        this.idade = idade;
+    public EstudanteModel() {
+
     }
 
     public Long getId() {

@@ -26,8 +26,8 @@ public class EstudanteController {
     }
 
     @DeleteMapping("/{id}")
-    public void deletarEstudante(@PathVariable("long id") Long Id) {
-        estudanteService.deletarEstudante(Id);
+    public void deletarEstudante(@PathVariable Long id) {
+        estudanteService.deletarEstudante(id);
     }
 
 }
