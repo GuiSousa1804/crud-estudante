@@ -35,9 +35,9 @@ public class EstudanteController {
         estudanteService.buscarPorId(id);
     }
 
-    @GetMapping("/{id}")
-    public EstudanteModel atualizar(@PathVariable Long id, @RequestBody EstudanteModel estudanteModel) {
-        return estudanteService.atualizar(id, estudanteModel);
+    @PutMapping("/{id}")
+    public EstudanteModel atualizar(@PathVariable Long id, @RequestBody EstudanteModel model) {
+        return estudanteService.atualizar(id, model);
     }
 
 
