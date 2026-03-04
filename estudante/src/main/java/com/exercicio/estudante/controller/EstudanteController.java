@@ -35,4 +35,10 @@ public class EstudanteController {
         estudanteService.buscarPorId(id);
     }
 
+    @GetMapping("/{id}")
+    public EstudanteModel atualizar(@PathVariable Long id, @RequestBody EstudanteModel estudanteModel) {
+        return estudanteService.atualizar(id, estudanteModel);
+    }
+
+
 }
